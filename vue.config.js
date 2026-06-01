@@ -19,5 +19,5 @@ module.exports = {
     lintStyleOnBuild: false,
     stylelint: {}
   },
-  publicPath: '/perspective-taking-categorical-one/'
+  publicPath: '/study-68/'
 };
