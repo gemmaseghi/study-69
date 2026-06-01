@@ -1,222 +1,242 @@
 const trials = [
 {
     id: 1,
-    phase: "cg",
-    condition: "filler2color",
-    utterance: "The red chair",
-    item: "red chair",
+    phase: "blindspot",
+    condition: "trial1",
+    utterance: "The house",
+    item: "house",
     image: "stimuli/trial_01.png",
     greyCell: "bottomRight",
-    correctAnswer: "topLeft"
+    correctAnswer: ["topRight"],
+    maxSelections: 1
   },
 
 {
     id: 2,
-    phase: "cg",
-    condition: "filler1",
-    utterance: "The tree",
-    item: "tree",
+    phase: "blindspot",
+    condition: "trial2size",
+    utterance: "The umbrella",
+    item: "red umbrella",
     image: "stimuli/trial_02.png",
     greyCell: "bottomRight",
-    correctAnswer: "topRight"
+    correctAnswer: ["topRight", "bottomRight"],
+    maxSelections: 2
   },
   
 {
     id: 3,
-    phase: "cg",
-    condition: "baseline",
-    utterance: "The dog",
-    item: "dog",
+    phase: "blindspot",
+    condition: "trial1",
+    utterance: "The flower",
+    item: "red flower",
     image: "stimuli/trial_03.png",
     greyCell: "bottomRight",
-    correctAnswer: "topLeft"
+    correctAnswer: ["topRight"],
+    maxSelections: 1
   },
 
 {
     id: 4,
-    phase: "cg",
-    condition: "filler1",
-    utterance: "The pen",
-    item: "green pen",
+    phase: "blindspot",
+    condition: "trial3color",
+    utterance: "The green chair",
+    item: "green chair",
     image: "stimuli/trial_04.png",
     greyCell: "bottomRight",
-    correctAnswer: "topRight"
+    correctAnswer: ["topRight"],
+    maxSelections: 1
   },
 
 {
     id: 5,
-    phase: "cg",
-    condition: "filler2size",
-    utterance: "The small umbrella",
-    item: "small red umbrella",
+    phase: "blindspot",
+    condition: "trial1",
+    utterance: "The clock",
+    item: "red clock",
     image: "stimuli/trial_05.png",
     greyCell: "bottomRight",
-    correctAnswer: "bottomLeft"
+    correctAnswer: ["topRight"],
+    maxSelections: 1
   },
 
 {
     id: 6,
-    phase: "cg",
-    condition: "filler1",
-    utterance: "The flower",
-    item: "red flower",
+    phase: "blindspot",
+    condition: "trial3color",
+    utterance: "The yellow book",
+    item: "yellow book",
     image: "stimuli/trial_06.png",
     greyCell: "bottomRight",
-    correctAnswer: "topLeft"
+    correctAnswer: ["topRight"],
+    maxSelections: 1
   },
 
 {
     id: 7,
-    phase: "cg",
-    condition: "baseline",
-    utterance: "The shoe",
-    item: "red shoe",
+    phase: "blindspot",
+    condition: "trial1",
+    utterance: "The fish",
+    item: "blue fish",
     image: "stimuli/trial_07.png",
     greyCell: "bottomRight",
-    correctAnswer: "topRight"
+    correctAnswer: ["topRight"],
+    maxSelections: 1
   },
 
 {
     id: 8,
-    phase: "cg",
-    condition: "filler2color",
-    utterance: "The red apple",
-    item: "red apple",
+    phase: "blindspot",
+    condition: "trial2color",
+    utterance: "The shoe",
+    item: "blue shoe",
     image: "stimuli/trial_08.png",
     greyCell: "bottomRight",
-    correctAnswer: "bottomLeft"
+    correctAnswer: ["bottomLeft", "bottomRight"],
+    maxSelections: 2
   },
 
 {
     id: 9,
-    phase: "cg",
-    condition: "filler1",
-    utterance: "The fish",
-    item: "orange fish",
+    phase: "blindspot",
+    condition: "trial1",
+    utterance: "The pen",
+    item: "orange pen",
     image: "stimuli/trial_09.png",
     greyCell: "bottomRight",
-    correctAnswer: "topLeft"
+    correctAnswer: ["topLeft"],
+    maxSelections: 1
   },
 
 {
     id: 10,
-    phase: "cg",
-    condition: "baseline",
-    utterance: "The house",
-    item: "house",
+    phase: "blindspot",
+    condition: "trial4size",
+    utterance: "The small flower",
+    item: "small red flower",
     image: "stimuli/trial_10.png",
     greyCell: "bottomRight",
-    correctAnswer: "topLeft"
+    correctAnswer: ["topRight"],
+    maxSelections: 1
   },
 
 {
     id: 11,
-    phase: "cg",
-    condition: "filler2size",
-    utterance: "The small cup",
-    item: "small bluecup",
+    phase: "blindspot",
+    condition: "trial2size",
+    utterance: "The apple",
+    item: "red apple",
     image: "stimuli/trial_11.png",
     greyCell: "bottomRight",
-    correctAnswer: "bottomLeft"
+    correctAnswer: ["bottomLeft", "bottomRight"],
+    maxSelections: 2
   },
 
 {
     id: 12,
-    phase: "cg",
-    condition: "filler2color",
-    utterance: "The yellow flower",
-    item: "yellow flower",
+    phase: "blindspot",
+    condition: "trial1",
+    utterance: "The house",
+    item: "house",
     image: "stimuli/trial_12.png",
     greyCell: "bottomRight",
-    correctAnswer: "topLeft"
+    correctAnswer: ["topLeft"],
+    maxSelections: 1
   },
 
 {
     id: 13,
-    phase: "cg",
-    condition: "baseline",
-    utterance: "The book",
-    item: "green book",
+    phase: "blindspot",
+    condition: "trial1",
+    utterance: "The cat",
+    item: "cat",
     image: "stimuli/trial_13.png",
     greyCell: "bottomRight",
-    correctAnswer: "topRight"
+    correctAnswer: ["topRight"],
+    maxSelections: 1
   },
 
 {
     id: 14,
-    phase: "cg",
+    phase: "blindspot",
     condition: "filler1",
-    utterance: "The car",
-    item: "red car",
+    utterance: "The big dog",
+    item: "dog",
     image: "stimuli/trial_14.png",
     greyCell: "bottomRight",
-    correctAnswer: "bottomLeft"
+    correctAnswer: ["topLeft"],
+    maxSelections: 1
   },
 
 {
     id: 15,
-    phase: "cg",
+    phase: "blindspot",
     condition: "baseline",
-    utterance: "The duck",
-    item: "duck",
+    utterance: "The car",
+    item: "red car",
     image: "stimuli/trial_15.png",
     greyCell: "bottomRight",
-    correctAnswer: "bottomLeft"
+    correctAnswer: ["topLeft"],
+    maxSelections: 1
   },
 
 {
     id: 16,
-    phase: "cg",
-    condition: "filler2size",
-    utterance: "The small cat",
-    item: "small cat",
+    phase: "blindspot",
+    condition: "trial4color",
+    utterance: "The blue chair",
+    item: "blue chair",
     image: "stimuli/trial_16.png",
     greyCell: "bottomRight",
-    correctAnswer: "topRight"
+    correctAnswer: ["bottomLeft"],
+    maxSelections: 1
   },
 
 {
     id: 17,
-    phase: "cg",
-    condition: "filler1",
-    utterance: "The house",
-    item: "house",
+    phase: "blindspot",
+    condition: "trial1",
+    utterance: "The duck",
+    item: "duck",
     image: "stimuli/trial_17.png",
     greyCell: "bottomRight",
-    correctAnswer: "topLeft"
+    correctAnswer: ["topRight"],
+    maxSelections: 1
   },
 
 {
     id: 18,
-    phase: "cg",
-    condition: "baseline",
-    utterance: "The pen",
-    item: "greenpen",
+    phase: "blindspot",
+    condition: "trial1",
+    utterance: "The tree",
+    item: "tree",
     image: "stimuli/trial_18.png",
     greyCell: "bottomRight",
-    correctAnswer: "bottomLeft"
+    correctAnswer: ["topLeft"],
+    maxSelections: 1
   },
 
 {
     id: 19,
-    phase: "cg",
-    condition: "filler1",
-    utterance: "The chair",
-    item: "red chair",
+    phase: "blindspot",
+    condition: "trial2color",
+    utterance: "The umbrella",
+    item: "yellow umbrella",
     image: "stimuli/trial_19.png",
     greyCell: "bottomRight",
-    correctAnswer: "topLeft"
+    correctAnswer: ["bottomLeft"],
+    maxSelections: 1
   },
 
 {
     id: 20,
-    phase: "cg",
-    condition: "baseline",
-    utterance: "The car",
-    item: "yellowcar",
+    phase: "blindspot",
+    condition: "trial1",
+    utterance: "The shoe",
+    item: "red shoe",
     image: "stimuli/trial_20.png",
     greyCell: "bottomRight",
-    correctAnswer: "topRight"
+    correctAnswer: ["topRight"],
+    maxSelections: 1
   },
 
 {
@@ -227,7 +247,8 @@ const trials = [
     item: "red umbrella",
     image: "stimuli/trial_21.png",
     greyCell: "bottomRight",
-    correctAnswer: "topLeft"
+    correctAnswer: ["topLeft"],
+    maxSelections: 1
   },
 
 {
@@ -238,7 +259,8 @@ const trials = [
     item: "orange fish",
     image: "stimuli/trial_22.png",
     greyCell: "bottomRight",
-    correctAnswer: "bottomLeft"
+    correctAnswer: ["bottomLeft"],
+    maxSelections: 1
   },
 
 {
@@ -249,7 +271,8 @@ const trials = [
     item: "small red clock",
     image: "stimuli/trial_23.png",
     greyCell: "bottomRight",
-    correctAnswer: "topRight"
+    correctAnswer: ["topRight"],
+    maxSelections: 1  
   },
 
 {
@@ -260,7 +283,8 @@ const trials = [
     item: "blue book",
     image: "stimuli/trial_24.png",
     greyCell: "bottomRight",
-    correctAnswer: "bottomLeft"
+    correctAnswer: ["bottomLeft"],
+    maxSelections: 1
   },
 
 {
@@ -271,7 +295,8 @@ const trials = [
     item: "red shoe",
     image: "stimuli/trial_25.png",
     greyCell: "bottomRight",
-    correctAnswer: "topRight"
+    correctAnswer: ["topRight"],  
+    maxSelections: 1
   },
 
 {
@@ -282,7 +307,8 @@ const trials = [
     item: "blue pen",
     image: "stimuli/trial_26.png",
     greyCell: "bottomRight",
-    correctAnswer: "bottomLeft"
+    correctAnswer: ["bottomLeft"],
+    maxSelections: 1
   },
 
 {
@@ -293,7 +319,8 @@ const trials = [
     item: "orange cup",
     image: "stimuli/trial_27.png",
     greyCell: "bottomRight",
-    correctAnswer: "topLeft"
+    correctAnswer: ["topLeft"],
+    maxSelections: 1
   },
 
 {
@@ -304,7 +331,8 @@ const trials = [
     item: "green chair",
     image: "stimuli/trial_28.png",
     greyCell: "bottomRight",
-    correctAnswer: "topRight"
+    correctAnswer: ["topRight"],
+    maxSelections: 1
   },
 
 {
@@ -315,7 +343,8 @@ const trials = [
     item: "red apple",
     image: "stimuli/trial_29.png",
     greyCell: "bottomRight",
-    correctAnswer: "bottomLeft"
+    correctAnswer: ["bottomLeft"],
+    maxSelections: 1
   },
 
 {
@@ -326,7 +355,8 @@ const trials = [
     item: "blue clock",
     image: "stimuli/trial_30.png",
     greyCell: "bottomRight",
-    correctAnswer: "topLeft"
+    correctAnswer: ["topLeft"],
+    maxSelections: 1
   },
 
 {
@@ -337,7 +367,8 @@ const trials = [
     item: "house",
     image: "stimuli/trial_31.png",
     greyCell: "bottomRight",
-    correctAnswer: "topRight"
+    correctAnswer: ["topRight"],
+    maxSelections: 1
   },
 
 {
@@ -348,7 +379,8 @@ const trials = [
     item: "yellow umbrella",
     image: "stimuli/trial_32.png",
     greyCell: "bottomRight",
-    correctAnswer: "bottomLeft"
+    correctAnswer: ["bottomLeft"],
+    maxSelections: 1
   },
 
 {
@@ -359,7 +391,8 @@ const trials = [
     item: "small tree",
     image: "stimuli/trial_33.png",
     greyCell: "bottomRight",
-    correctAnswer: "topRight"
+    correctAnswer: ["topRight"],
+    maxSelections: 1
   },
 
 {
@@ -370,7 +403,8 @@ const trials = [
     item: "red flower",
     image: "stimuli/trial_34.png",
     greyCell: "bottomRight",
-    correctAnswer: "topLeft"
+    correctAnswer: ["topLeft"],
+    maxSelections: 1
   }
 
 ];
