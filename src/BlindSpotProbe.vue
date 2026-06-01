@@ -1,7 +1,7 @@
 <template>
   <Screen>
-    <!-- Step 1: yes/no question -->
-    <div v-if="step === 1">
+
+    <div v-if="step === 1" class="probe-screen">
       <h2>Hidden cell question</h2>
 
       <p>
@@ -11,16 +11,15 @@
 
       <div class="button-container">
         <button @click="answerNo">
-            No
+          No
         </button>
 
         <button @click="step = 2">
-            Yes
+          Yes
         </button>
       </div>
     </div>
 
-    <!-- Step 2: select blind spot -->
     <div v-if="step === 2">
       <h2>Select the hidden cell</h2>
 
@@ -37,6 +36,7 @@
         <button class="cell bottom-right" @click="selectCell('bottomRight')" />
       </div>
     </div>
+
   </Screen>
 </template>
 
@@ -100,6 +100,13 @@ export default {
   padding: 0;
 }
 
+.probe-screen {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .button-container {
   display: flex;
   justify-content: center;
@@ -147,7 +154,7 @@ export default {
   height: 50%;
 }
 
-button {
+.button-container button {
   margin: 10px;
 }
 </style>
