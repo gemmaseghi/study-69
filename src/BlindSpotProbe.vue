@@ -1,6 +1,5 @@
 <template>
   <Screen>
-
     <div v-if="step === 1" class="probe-screen">
       <h2>Hidden cell question</h2>
 
@@ -36,7 +35,6 @@
         <button class="cell bottom-right" @click="selectCell('bottomRight')" />
       </div>
     </div>
-
   </Screen>
 </template>
 
@@ -49,35 +47,66 @@ export default {
       type: String,
       default: "stimuli/empty_grid.png"
     },
-    correctBlindSpot: String
+    correctBlindSpot: String,
+    skip: {
+      type: Boolean,
+      default: false
+    }
   },
   data() {
     return {
       step: 1
     };
   },
+  mounted() {
+    if (this.skip) {
+      this.$magpie.nextScreen();
+    }
+  },
   methods: {
     answerNo() {
+      if (this.skip) {
+        return;
+      }
+
       this.$magpie.addTrialData({
         trial_type: "blindspot_probe",
         probe_id: this.probeId,
         has_enough_information: "no",
         blindspot_response: null,
         correct_blindspot: this.correctBlindSpot,
+        skipped: false,
         correct: null
       });
 
       this.$magpie.nextScreen();
     },
+
     selectCell(cell) {
+      if (this.skip) {
+        return;
+      }
+
+      const isCorrect = cell === this.correctBlindSpot;
+
       this.$magpie.addTrialData({
         trial_type: "blindspot_probe",
         probe_id: this.probeId,
         has_enough_information: "yes",
         blindspot_response: cell,
         correct_blindspot: this.correctBlindSpot,
-        correct: cell === this.correctBlindSpot
+        skipped: false,
+        correct: isCorrect
       });
+
+      this.$emit("blindspot-answer", {
+        probeId: this.probeId,
+        correct: isCorrect
+      });
+
+      if (isCorrect) {
+        this.$emit("solved-blindspot");
+      }
 
       this.$magpie.nextScreen();
     }

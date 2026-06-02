@@ -17,7 +17,11 @@
 export default {
   name: "GridTrial",
   props: {
-    trial: Object
+    trial: Object,
+    skip: {
+      type: Boolean,
+      default: false
+    }
   },
   data() {
     return {
@@ -29,8 +33,17 @@ export default {
       return this.trial.maxSelections || 1;
     }
   },
+  mounted() {
+    if (this.skip) {
+      this.$magpie.nextScreen();
+    }
+  },
   methods: {
     selectCell(cell) {
+      if (this.skip) {
+        return;
+      }
+
       // Ignore repeated clicks on the same cell
       if (this.selectedCells.includes(cell)) {
         return;
@@ -38,8 +51,6 @@ export default {
 
       this.selectedCells.push(cell);
 
-      // For ordinary trials, this submits immediately after 1 click.
-      // For ambiguous trials, this submits after 2 different cells have been clicked.
       if (this.selectedCells.length === this.maxSelections) {
         this.submitResponse();
       }
@@ -54,6 +65,11 @@ export default {
         ? this.trial.correctAnswer
         : [this.trial.correctAnswer];
 
+      const isCorrect =
+        this.maxSelections === 1
+          ? correctAnswers.includes(this.selectedCells[0])
+          : this.sameSet(this.selectedCells, correctAnswers);
+
       this.$magpie.addTrialData({
         trial_id: this.trial.id,
         phase: this.trial.phase,
@@ -65,7 +81,8 @@ export default {
         response: this.selectedCells.join(","),
         n_selected: this.selectedCells.length,
         max_selections: this.maxSelections,
-        correct: this.sameSet(this.selectedCells, correctAnswers)
+        skipped: false,
+        correct: isCorrect
       });
 
       this.$magpie.nextScreen();

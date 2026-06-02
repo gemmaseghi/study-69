@@ -20,7 +20,7 @@ const trials = [
     image: "stimuli/trial_02.png",
     greyCell: "bottomRight",
     correctAnswer: ["topRight", "bottomRight"],
-    maxSelections: 2
+    maxSelections: 1
   },
   
 {
@@ -92,7 +92,7 @@ const trials = [
     image: "stimuli/trial_08.png",
     greyCell: "bottomRight",
     correctAnswer: ["bottomLeft", "bottomRight"],
-    maxSelections: 2
+    maxSelections: 1
   },
 
 {
@@ -128,7 +128,7 @@ const trials = [
     image: "stimuli/trial_11.png",
     greyCell: "bottomRight",
     correctAnswer: ["bottomLeft", "bottomRight"],
-    maxSelections: 2
+    maxSelections: 1
   },
 
 {
