@@ -51,16 +51,22 @@ export default {
     skip: {
       type: Boolean,
       default: false
+    },
+    forceSelection: {
+      type: Boolean,
+      default: false
     }
-  },
+ },
   data() {
     return {
-      step: 1
+      step: this.forceSelection ? 2 : 1
     };
-  },
+ },
   mounted() {
+    console.log("Probe", this.probeId, "skip:", this.skip, "force:", this.forceSelection);
+
     if (this.skip) {
-      this.$magpie.nextScreen();
+        this.$magpie.nextScreen();
     }
   },
   methods: {
@@ -118,7 +124,7 @@ export default {
 .grid-wrapper {
   position: relative;
   width: 500px;
-  margin: 30px auto;
+  margin: 0 auto;
   line-height: 0;
 }
 
@@ -129,29 +135,16 @@ export default {
   padding: 0;
 }
 
-.probe-screen {
-  min-height: 60vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.button-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 30px;
-}
-
 .cell {
   position: absolute;
-  background: transparent;
-  border: none;
+  background: rgba(0, 0, 0, 0);
+  border: 0;
   padding: 0;
   margin: 0;
+  color: transparent;
+  font-size: 0;
   appearance: none;
   -webkit-appearance: none;
-  opacity: 0;
   cursor: pointer;
 }
 
@@ -183,7 +176,4 @@ export default {
   height: 50%;
 }
 
-.button-container button {
-  margin: 10px;
-}
 </style>

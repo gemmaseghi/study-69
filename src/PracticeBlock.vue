@@ -3,7 +3,7 @@
     <div v-if="step === 'intro'" class="centered">
       <h2>Practice</h2>
       <p>
-        You will now complete a short practice round to understand how the task works.
+        You will now complete a short practice round to understand how the task works. Please select the object that you think the speaker is referring to and try to infer which cell is hidden from the speaker. 
       </p>
       <button @click="startPractice">Start practice</button>
     </div>

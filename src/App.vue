@@ -80,6 +80,7 @@ import GridTrial from "./GridTrial.vue";
 import BlindSpotProbe from "./BlindSpotProbe.vue";
 import Questionnaire from "./Questionnaire.vue";
 import PracticeBlock from "./PracticeBlock.vue";
+import FinalBlindSpotProbe from "./FinalBlindSpotProbe.vue";
 
 export default {
   name: "App",
@@ -87,6 +88,7 @@ export default {
     GridTrial,
     PracticeBlock,
     BlindSpotProbe,
+    FinalBlindSpotProbe,
     Questionnaire
   },
   data() {
@@ -94,9 +96,6 @@ export default {
       trials,
       practiceTrials,
       blindSpotSolved: false,
-      practicePassed: false,
-      practiceFailed: false,
-      practiceRound: 1,
       experimentTerminated: false
     };
   },
@@ -194,7 +193,7 @@ export default {
 
       screens.push({
         key: "probe-4",
-        component: BlindSpotProbe,
+        component: FinalBlindSpotProbe,
         props: {
           probeId: 4,
           correctBlindSpot: "bottomRight",
@@ -209,30 +208,17 @@ export default {
           component: GridTrial,
           props: {
             trial,
-            skip: false
+            skip: this.experimentTerminated
           }
         }))
       );
-      
-      if (this.experimentTerminated) {
-        return [];
-      }
+
       return screens;
     }
   },
   methods: {
     markBlindSpotSolved() {
       this.blindSpotSolved = true;
-    },
-
-    handlePracticeBlindspotAnswer(answer) {
-      if (answer.correct) {
-        this.practicePassed = true;
-        this.practiceFailed = false;
-      } else {
-        this.practiceFailed = true;
-        this.practiceRound += 1;
-      }
     },
 
     handleRealBlindspotAnswer(answer) {
