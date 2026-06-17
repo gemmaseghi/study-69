@@ -1,24 +1,27 @@
 <template>
   <Experiment title="Perspective-taking experiment">
     <InstructionScreen :title="'Welcome'">
-      Welcome to the experiment. Please move to the next screen to read the instructions.
+      Welcome to the experiment! You will first read a set of instructions. The instructions are divided into three parts. Please move to the next screen to read the first part of the instructions.
     </InstructionScreen>
 
     <InstructionScreen :title="'Instructions'">
-      In this experiment, you will play the role of the listener in a game with another participant, who will instead play the role of the speaker.
+      In this experiment, you will play a game with another participant. You will play the role of the listener, while the other participant will play the role of the speaker. 
       <br><br>
-
-      On each trial, you will see a grid containing four objects and a description above it.
+      On each trial, you will see a grid containing four objects and a description above it. The description is produced by the speaker to indicate one of the objects in the grid. You will only be presented the speaker's description in written form, you won't hear it spoken aloud.
       <br><br>
+      Please move to the next screen to read the second part of the instructions.
+    </InstructionScreen>
 
+    <InstructionScreen :title="'Instructions'">
       The speaker sees a slightly different version of the grid. Their grid contains only three objects because one cell is hidden by an occluder. The location of the hidden cell remains the same throughout the experiment.
       Apart from the hidden object, both grids contain the same objects. However, the position of the visible objects is shuffled across the two grids, so the speaker cannot use location words (e.g., "top left" or "bottom right") to refer to an object.
       <br><br>
-
       On the speaker's screen, one of the visible objects is marked with an asterisk (*). The speaker's task is to describe that object. Your task is to use the description, which will appear above the grid, to determine which object the speaker intended to refer to and select it.
       In some cases, you might not have enough information to identify a single object. When this happens, please select only the object that you think is the most likely candidate based on the information you have.
       <br><br>
-
+      Please move to the next screen to read the third part of the instructions.
+    </InstructionScreen>
+    <InstructionScreen :title="'Instructions'">
       Occasionally, you will be asked whether you think you have enough information to determine which cell is hidden from the speaker. If you believe you have enough information, you will be asked to select the hidden cell in an empty grid. If you correctly identify the hidden cell, that cell will be marked in grey for the remainder of the experiment, so you can use that information to guide your selections in the remaining trials.
       Continue selecting the object you think the speaker is referring to until the end of the experiment.
       <br><br>

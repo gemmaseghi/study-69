@@ -6,7 +6,7 @@
     <div v-if="step === 1" class="question">
       <p>
         Did you think there was anything peculiar in the way the speaker
-        formulated the descriptions?
+        formulated the descriptions of the target objects?
       </p>
 
       <label>
@@ -32,7 +32,7 @@
       </div>
 
       <div v-if="peculiar === 'no'">
-        <p>Please explain any strategy you may have used.</p>
+        <p>Please explain any strategy you may have used to select the object described by the speaker.</p>
         <textarea v-model="strategyExplanation"></textarea>
       </div>
 
@@ -44,7 +44,7 @@
     <!-- Step 3: Question C -->
     <div v-if="step === 3" class="question">
       <p>
-        Did you suspect that the speaker could see what was in the grey cell?
+        Did you ever suspect that the speaker could see what was in the grey cell?
         Please explain why and give examples if possible.
       </p>
 
