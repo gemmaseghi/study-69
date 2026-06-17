@@ -158,7 +158,7 @@ const trials = [
 {
     id: 14,
     phase: "blindspot",
-    condition: "filler1",
+    condition: "trial3size",
     utterance: "The big dog",
     item: "dog",
     image: "stimuli/trial_14.png",

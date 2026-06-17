@@ -176,4 +176,15 @@ export default {
   height: 50%;
 }
 
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button-container button {
+  margin: 0 5px;
+  width: auto;
+}
+
 </style>
