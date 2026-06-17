@@ -7,8 +7,7 @@ const trials = [
     item: "house",
     image: "stimuli/trial_01.png",
     greyCell: "bottomRight",
-    correctAnswer: ["topRight"],
-    maxSelections: 1
+    correctAnswer: ["topRight"]
   },
 
 {
@@ -19,8 +18,7 @@ const trials = [
     item: "red umbrella",
     image: "stimuli/trial_02.png",
     greyCell: "bottomRight",
-    correctAnswer: ["topRight", "bottomRight"],
-    maxSelections: 1
+    correctAnswer: ["topRight", "bottomRight"]
   },
   
 {
@@ -31,8 +29,7 @@ const trials = [
     item: "red flower",
     image: "stimuli/trial_03.png",
     greyCell: "bottomRight",
-    correctAnswer: ["topRight"],
-    maxSelections: 1
+    correctAnswer: ["topRight"]
   },
 
 {
@@ -43,8 +40,7 @@ const trials = [
     item: "green chair",
     image: "stimuli/trial_04.png",
     greyCell: "bottomRight",
-    correctAnswer: ["topRight"],
-    maxSelections: 1
+    correctAnswer: ["topRight"]
   },
 
 {
@@ -55,8 +51,7 @@ const trials = [
     item: "red clock",
     image: "stimuli/trial_05.png",
     greyCell: "bottomRight",
-    correctAnswer: ["topRight"],
-    maxSelections: 1
+    correctAnswer: ["topRight"]
   },
 
 {
@@ -67,8 +62,7 @@ const trials = [
     item: "yellow book",
     image: "stimuli/trial_06.png",
     greyCell: "bottomRight",
-    correctAnswer: ["topRight"],
-    maxSelections: 1
+    correctAnswer: ["topRight"]
   },
 
 {
@@ -79,8 +73,7 @@ const trials = [
     item: "blue fish",
     image: "stimuli/trial_07.png",
     greyCell: "bottomRight",
-    correctAnswer: ["topRight"],
-    maxSelections: 1
+    correctAnswer: ["topRight"]
   },
 
 {
@@ -91,8 +84,7 @@ const trials = [
     item: "blue shoe",
     image: "stimuli/trial_08.png",
     greyCell: "bottomRight",
-    correctAnswer: ["bottomLeft", "bottomRight"],
-    maxSelections: 1
+    correctAnswer: ["bottomLeft", "bottomRight"]
   },
 
 {
@@ -103,8 +95,7 @@ const trials = [
     item: "orange pen",
     image: "stimuli/trial_09.png",
     greyCell: "bottomRight",
-    correctAnswer: ["topLeft"],
-    maxSelections: 1
+    correctAnswer: ["topLeft"]
   },
 
 {
@@ -115,8 +106,7 @@ const trials = [
     item: "small red flower",
     image: "stimuli/trial_10.png",
     greyCell: "bottomRight",
-    correctAnswer: ["topRight"],
-    maxSelections: 1
+    correctAnswer: ["topRight"]
   },
 
 {
@@ -127,8 +117,7 @@ const trials = [
     item: "red apple",
     image: "stimuli/trial_11.png",
     greyCell: "bottomRight",
-    correctAnswer: ["bottomLeft", "bottomRight"],
-    maxSelections: 1
+    correctAnswer: ["bottomLeft", "bottomRight"]
   },
 
 {
@@ -139,8 +128,7 @@ const trials = [
     item: "house",
     image: "stimuli/trial_12.png",
     greyCell: "bottomRight",
-    correctAnswer: ["topLeft"],
-    maxSelections: 1
+    correctAnswer: ["topLeft"]
   },
 
 {
@@ -151,8 +139,7 @@ const trials = [
     item: "cat",
     image: "stimuli/trial_13.png",
     greyCell: "bottomRight",
-    correctAnswer: ["topRight"],
-    maxSelections: 1
+    correctAnswer: ["topRight"]
   },
 
 {
@@ -163,8 +150,7 @@ const trials = [
     item: "dog",
     image: "stimuli/trial_14.png",
     greyCell: "bottomRight",
-    correctAnswer: ["topLeft"],
-    maxSelections: 1
+    correctAnswer: ["topLeft"]
   },
 
 {
@@ -175,8 +161,7 @@ const trials = [
     item: "red car",
     image: "stimuli/trial_15.png",
     greyCell: "bottomRight",
-    correctAnswer: ["topLeft"],
-    maxSelections: 1
+    correctAnswer: ["topLeft"]
   },
 
 {
@@ -187,8 +172,7 @@ const trials = [
     item: "blue chair",
     image: "stimuli/trial_16.png",
     greyCell: "bottomRight",
-    correctAnswer: ["bottomLeft"],
-    maxSelections: 1
+    correctAnswer: ["bottomLeft"]
   },
 
 {
@@ -199,8 +183,7 @@ const trials = [
     item: "duck",
     image: "stimuli/trial_17.png",
     greyCell: "bottomRight",
-    correctAnswer: ["topRight"],
-    maxSelections: 1
+    correctAnswer: ["topRight"]
   },
 
 {
@@ -211,8 +194,7 @@ const trials = [
     item: "tree",
     image: "stimuli/trial_18.png",
     greyCell: "bottomRight",
-    correctAnswer: ["topLeft"],
-    maxSelections: 1
+    correctAnswer: ["topLeft"]
   },
 
 {
@@ -223,8 +205,7 @@ const trials = [
     item: "yellow umbrella",
     image: "stimuli/trial_19.png",
     greyCell: "bottomRight",
-    correctAnswer: ["bottomLeft"],
-    maxSelections: 1
+    correctAnswer: ["bottomLeft"]
   },
 
 {
@@ -235,8 +216,7 @@ const trials = [
     item: "red shoe",
     image: "stimuli/trial_20.png",
     greyCell: "bottomRight",
-    correctAnswer: ["topRight"],
-    maxSelections: 1
+    correctAnswer: ["topRight"]
   },
 
 {
@@ -247,8 +227,7 @@ const trials = [
     item: "red umbrella",
     image: "stimuli/trial_21.png",
     greyCell: "bottomRight",
-    correctAnswer: ["topLeft"],
-    maxSelections: 1
+    correctAnswer: ["topLeft"]
   },
 
 {
@@ -259,8 +238,7 @@ const trials = [
     item: "orange fish",
     image: "stimuli/trial_22.png",
     greyCell: "bottomRight",
-    correctAnswer: ["bottomLeft"],
-    maxSelections: 1
+    correctAnswer: ["bottomLeft"]
   },
 
 {
@@ -271,8 +249,7 @@ const trials = [
     item: "small red clock",
     image: "stimuli/trial_23.png",
     greyCell: "bottomRight",
-    correctAnswer: ["topRight"],
-    maxSelections: 1  
+    correctAnswer: ["topRight"] 
   },
 
 {
@@ -283,8 +260,7 @@ const trials = [
     item: "blue book",
     image: "stimuli/trial_24.png",
     greyCell: "bottomRight",
-    correctAnswer: ["bottomLeft"],
-    maxSelections: 1
+    correctAnswer: ["bottomLeft"]
   },
 
 {
@@ -295,8 +271,7 @@ const trials = [
     item: "red shoe",
     image: "stimuli/trial_25.png",
     greyCell: "bottomRight",
-    correctAnswer: ["topRight"],  
-    maxSelections: 1
+    correctAnswer: ["topRight"]
   },
 
 {
@@ -307,8 +282,7 @@ const trials = [
     item: "blue pen",
     image: "stimuli/trial_26.png",
     greyCell: "bottomRight",
-    correctAnswer: ["bottomLeft"],
-    maxSelections: 1
+    correctAnswer: ["bottomLeft"]
   },
 
 {
@@ -319,8 +293,7 @@ const trials = [
     item: "orange cup",
     image: "stimuli/trial_27.png",
     greyCell: "bottomRight",
-    correctAnswer: ["topLeft"],
-    maxSelections: 1
+    correctAnswer: ["topLeft"]
   },
 
 {
@@ -331,8 +304,7 @@ const trials = [
     item: "green chair",
     image: "stimuli/trial_28.png",
     greyCell: "bottomRight",
-    correctAnswer: ["topRight"],
-    maxSelections: 1
+    correctAnswer: ["topRight"]
   },
 
 {
@@ -343,8 +315,7 @@ const trials = [
     item: "red apple",
     image: "stimuli/trial_29.png",
     greyCell: "bottomRight",
-    correctAnswer: ["bottomLeft"],
-    maxSelections: 1
+    correctAnswer: ["bottomLeft"]
   },
 
 {
@@ -355,8 +326,7 @@ const trials = [
     item: "blue clock",
     image: "stimuli/trial_30.png",
     greyCell: "bottomRight",
-    correctAnswer: ["topLeft"],
-    maxSelections: 1
+    correctAnswer: ["topLeft"]
   },
 
 {
@@ -367,8 +337,7 @@ const trials = [
     item: "house",
     image: "stimuli/trial_31.png",
     greyCell: "bottomRight",
-    correctAnswer: ["topRight"],
-    maxSelections: 1
+    correctAnswer: ["topRight"]
   },
 
 {
@@ -379,8 +348,7 @@ const trials = [
     item: "yellow umbrella",
     image: "stimuli/trial_32.png",
     greyCell: "bottomRight",
-    correctAnswer: ["bottomLeft"],
-    maxSelections: 1
+    correctAnswer: ["bottomLeft"]
   },
 
 {
@@ -391,8 +359,7 @@ const trials = [
     item: "small tree",
     image: "stimuli/trial_33.png",
     greyCell: "bottomRight",
-    correctAnswer: ["topRight"],
-    maxSelections: 1
+    correctAnswer: ["topRight"]
   },
 
 {
@@ -403,8 +370,7 @@ const trials = [
     item: "red flower",
     image: "stimuli/trial_34.png",
     greyCell: "bottomRight",
-    correctAnswer: ["topLeft"],
-    maxSelections: 1
+    correctAnswer: ["topLeft"]
   }
 
 ];
