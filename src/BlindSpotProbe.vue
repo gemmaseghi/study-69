@@ -9,13 +9,15 @@
       </p>
 
       <div class="button-container">
-        <button @click="answerNo">
-          No
-        </button>
 
         <button @click="step = 2">
           Yes
         </button>
+
+        <button @click="answerNo">
+          No
+        </button>
+        
       </div>
     </div>
 

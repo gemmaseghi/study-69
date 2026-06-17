@@ -9,15 +9,17 @@
         formulated the descriptions of the target objects?
       </p>
 
-      <label>
-        <input type="radio" value="yes" v-model="peculiar" />
-        Yes
-      </label>
+      <div class="radio-container">
+        <label>
+          <input type="radio" value="yes" v-model="peculiar" />
+          Yes
+        </label>
 
-      <label>
-        <input type="radio" value="no" v-model="peculiar" />
-        No
-      </label>
+        <label>
+          <input type="radio" value="no" v-model="peculiar" />
+          No
+        </label>
+      </div>
 
       <button :disabled="!peculiar" @click="step = 2">
         Next
@@ -115,5 +117,19 @@ textarea {
 
 button {
   margin-top: 20px;
+}
+
+.radio-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.radio-container label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0;
 }
 </style>
