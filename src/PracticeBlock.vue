@@ -166,7 +166,6 @@ export default {
         practice_round: this.practiceRound,
         trial_id: this.revealedTrial.id,
         utterance: this.revealedTrial.utterance,
-        image: this.revealedTrial.image,
         response: cell,
         correct_answer: correctAnswers.join(","),
         correct: isCorrect

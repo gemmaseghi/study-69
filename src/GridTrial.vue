@@ -23,16 +23,6 @@ export default {
       default: false
     }
   },
-  data() {
-    return {
-      selectedCells: []
-    };
-  },
-  computed: {
-    maxSelections() {
-      return this.trial.maxSelections || 1;
-    }
-  },
   mounted() {
     if (this.skip) {
       this.$magpie.nextScreen();
@@ -44,44 +34,20 @@ export default {
         return;
       }
 
-      // Ignore repeated clicks on the same cell
-      if (this.selectedCells.includes(cell)) {
-        return;
-      }
-
-      this.selectedCells.push(cell);
-
-      if (this.selectedCells.length === this.maxSelections) {
-        this.submitResponse();
-      }
-    },
-
-    sameSet(a, b) {
-      return a.length === b.length && a.every(x => b.includes(x));
-    },
-
-    submitResponse() {
       const correctAnswers = Array.isArray(this.trial.correctAnswer)
         ? this.trial.correctAnswer
         : [this.trial.correctAnswer];
 
-      const isCorrect =
-        this.maxSelections === 1
-          ? correctAnswers.includes(this.selectedCells[0])
-          : this.sameSet(this.selectedCells, correctAnswers);
+      const isCorrect = correctAnswers.includes(cell);
 
       this.$magpie.addTrialData({
         trial_id: this.trial.id,
         phase: this.trial.phase,
         condition: this.trial.condition,
         utterance: this.trial.utterance,
-        image: this.trial.image,
         grey_cell: this.trial.greyCell,
         correct_answer: correctAnswers.join(","),
-        response: this.selectedCells.join(","),
-        n_selected: this.selectedCells.length,
-        max_selections: this.maxSelections,
-        skipped: false,
+        response: cell,
         correct: isCorrect
       });
 

@@ -17,7 +17,7 @@
         <button @click="answerNo">
           No
         </button>
-        
+
       </div>
     </div>
 
@@ -83,7 +83,6 @@ export default {
         has_enough_information: "no",
         blindspot_response: null,
         correct_blindspot: this.correctBlindSpot,
-        skipped: false,
         correct: null
       });
 
@@ -103,7 +102,6 @@ export default {
         has_enough_information: "yes",
         blindspot_response: cell,
         correct_blindspot: this.correctBlindSpot,
-        skipped: false,
         correct: isCorrect
       });
 
