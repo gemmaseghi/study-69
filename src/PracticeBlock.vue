@@ -1,9 +1,13 @@
 <template>
   <Screen>
-    <div v-if="step === 'intro'" class="centered">
+    <div v-if="step === 'intro'" class="practice-instructions">
       <h2>Practice</h2>
       <p>
-        You will now complete a short practice round to understand how the task works. Please select the object that you think the speaker is referring to and try to infer which cell is hidden from the speaker. If you don't infer the cell correctly, you will have to repeat the practice round until you find the correct answer. 
+        You will now complete a short practice round to understand how the task works. Please select the object that you think the speaker is referring to and try to infer which cell is hidden from the speaker. 
+        
+        <br><br>
+
+        If you don't infer the cell correctly, you will have to repeat the practice round until you find the correct answer. 
       </p>
       <button @click="startPractice">Start practice</button>
     </div>
@@ -21,7 +25,7 @@
       </div>
     </div>
 
-    <div v-if="step === 'blindspot'" class="centered">
+    <div v-if="step === 'blindspot'" class="practice-instructions">
       <h2>Select the hidden cell</h2>
       <p>
         Please select the cell that you think is hidden from the speaker.
@@ -37,7 +41,7 @@
       </div>
     </div>
 
-    <div v-if="step === 'error'" class="centered">
+    <div v-if="step === 'error'" class="practice-instructions">
       <h2>Try again</h2>
       <p>
         You did not identify the hidden cell correctly. Please try again the practice trials.
@@ -58,7 +62,7 @@
       </div>
     </div>
 
-    <div v-if="step === 'done'" class="centered">
+    <div v-if="step === 'done'" class="practice-instructions">
       <h2>End of practice</h2>
       <p>
         The practice round is now complete. The real experiment will begin on the next screen.
@@ -175,12 +179,19 @@ export default {
 </script>
 
 <style scoped>
-.centered {
-  min-height: 60vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.practice-instructions {
+  width: 600px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.practice-instructions h2 {
   text-align: center;
+}
+
+.practice-instructions button {
+  display: block;
+  margin: 20px auto 0;
 }
 
 .utterance {
