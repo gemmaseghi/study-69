@@ -21,8 +21,9 @@
       v-if="experimentTerminated"
       :title="'Experiment ended'"
     >
-      I am sorry, but you did not identify the correct hidden cell.
-      The experiment ends here.
+      Unfortunately, you did not identify the correct hidden cell.
+      The experiment ends here. You will still be paid for your participation. 
+      Thank you for taking part in our study!
     </InstructionScreen>
 
     <Questionnaire v-if="!experimentTerminated" />
